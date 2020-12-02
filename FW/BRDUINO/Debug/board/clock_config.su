@@ -1,0 +1,9 @@
+fsl_clock.h:627:20:CLOCK_EnableClock	24	static
+fsl_clock.h:638:20:CLOCK_DisableClock	24	static
+fsl_clock.h:842:20:CLOCK_SetSimSafeDivs	4	static
+fsl_clock.h:1194:20:CLOCK_SetXtal32Freq	16	static
+fsl_rtc.h:389:20:RTC_SetOscCapLoad	24	static
+clock_config.c:75:13:CLOCK_CONFIG_FllStableDelay	16	static
+clock_config.c:93:13:CLOCK_CONFIG_SetRtcClock	16	static
+clock_config.c:123:6:BOARD_InitBootClocks	8	static
+clock_config.c:209:6:BOARD_BootClockRUN	24	static

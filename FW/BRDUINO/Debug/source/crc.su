@@ -1,0 +1,3 @@
+crc.c:30:6:CRC_init	4	static
+crc.c:47:5:CRC_Config	32	static
+crc.c:92:10:CRC_Cal_16	40	static

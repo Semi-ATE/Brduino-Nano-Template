@@ -1,0 +1,2 @@
+System.c:28:12:GetSystemInfoStructPtr	4	static
+System.c:39:10:GetSystemDeviceType	4	static

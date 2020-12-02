@@ -1,0 +1,12 @@
+CmdController.c:40:5:InitControllerCommandHandler	4	static
+CmdController.c:53:5:cmd_SUB_CTR_SET_PID_COEFFS	48	static
+CmdController.c:84:5:cmd_SUB_CTR_SET_PID_SETPOINT	32	static
+CmdController.c:105:5:cmd_SUB_CTR_SET_FILTER	88	static
+CmdController.c:137:5:cmd_SUB_CTR_GET_ADC_SWEEP	56	static
+CmdController.c:175:5:cmd_SUB_CTR_GET_AUTO_SWEEP	48	static
+CmdController.c:200:5:cmd_SUB_CTR_GET_PID_COEFFS	96	static
+CmdController.c:231:5:cmd_SUB_CTR_GET_PID_ACTUAL_VAL	40	static
+CmdController.c:247:5:cmd_SUB_CTR_GET_PID_INTEG_VAL	40	static
+CmdController.c:265:5:cmd_SUB_CTR_GET_FILTER	112	static
+CmdController.c:297:5:cmd_SUB_CTR_GET_TARGET_FREQ_AMP	40	static
+CmdController.c:320:5:ControllerCommandHandler	24	static

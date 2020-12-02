@@ -1,0 +1,4 @@
+BRDUINO_Nano.c:67:6:CommunicationTask	24	static
+BRDUINO_Nano.c:95:5:main	16	static
+BRDUINO_Nano.c:148:6:vApplicationMallocFailedHook	8	static
+BRDUINO_Nano.c:153:6:vApplicationStackOverflowHook	16	static

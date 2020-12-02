@@ -1,0 +1,9 @@
+CmdSystem.c:34:5:InitSystemCommandHandler	4	static
+CmdSystem.c:47:5:cmd_SUB_SYS_REQUEST_PING	40	static
+CmdSystem.c:69:5:cmd_SUB_SYS_GET_ADC_VALUE	40	static
+CmdSystem.c:92:5:cmd_SUB_SYS_GET_ALL_ADC_VALUES	56	static
+CmdSystem.c:119:5:cmd_SUB_SYS_GET_ALL_ADC_VAL_FLOAT	64	static
+CmdSystem.c:146:5:cmd_SUB_SYS_GET_CLOCKS	56	static
+CmdSystem.c:166:5:cmd_SUB_SYS_GET_DEVICE_TYPE	32	static
+CmdSystem.c:184:5:cmd_SUB_SYS_SET_DEVICE_OWN_ADDR	32	static
+CmdSystem.c:207:5:SystemCommandHandler	24	static
