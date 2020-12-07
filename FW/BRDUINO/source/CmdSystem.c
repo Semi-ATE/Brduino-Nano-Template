@@ -14,7 +14,6 @@
 #include "CommandHandler.h"
 #include "Board.h"
 #include "System.h"
-#include "uart.h"
 #include "Misc.h"
 
 /* Scheduler includes. */

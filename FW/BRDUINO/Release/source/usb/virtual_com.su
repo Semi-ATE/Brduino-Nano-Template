@@ -1,0 +1,11 @@
+virtual_com.c:174:14:USB_DeviceCdcVcomCallback	16	static
+virtual_com.c:415:14:USB_DeviceCallback	8	static
+virtual_com.c:132:6:USB0_IRQHandler	8	static
+virtual_com.c:140:6:USB_DeviceClockInit	8	static
+virtual_com.c:146:6:USB_DeviceIsrEnable	0	static
+virtual_com.c:505:6:USB_DeviceApplicationInit	16	static
+virtual_com.c:632:6:APPTask	16	static
+virtual_com.c:536:14:get_USB_Error	0	static
+virtual_com.c:549:6:USB_Putchar	16	static
+virtual_com.c:573:6:USB_SendPacketCMD	32	static
+virtual_com.c:664:5:usb_main_init	16	static

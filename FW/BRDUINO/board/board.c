@@ -44,17 +44,19 @@ static const uint32_t		PIT_Period0 = 1U;	   	// Pit-timeout = 1ms
 static const uint32_t		PIT_Period1 = 10U;		// Pit-timeout = 10ms
 
 static uint16_t		      	ADC_conversion_value[BOARD_ADC_NumberOfChannels];
-static float		      	ADC_conversion_val_F[BOARD_ADC_NumberOfChannels];
+static float		      		ADC_conversion_val_F[BOARD_ADC_NumberOfChannels];
 
 static volatile int		   	gADC0channel_ctr = 0;
 
-static volatile uint64_t	JiffyCntr = 0;
+static volatile uint64_t		JiffyCntr = 0;
 
 static uint16_t            	DeviceOwnAddress = 0;
 
-int							gCnt = 0;
+static SupplyRail_t				SupplyRail[N_SUPPLY_RAILS];
 
-traceString 				adc_channel;
+int									gCnt = 0;
+
+traceString 						adc_channel;
 
 static volatile ADC_Conversion_Ptr_t 	ADC_Conversion_ADC0_Ptr[ADC0_N_CHANNEL] =
 {

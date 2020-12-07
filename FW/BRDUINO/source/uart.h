@@ -20,32 +20,32 @@
 #define	ESC_SOP		         0x01				///< Byte stuffing of SOP
 #define	ESC_EOP		         0x02				///< Byte stuffing of EOP
 
-#define  E_NO_ERROR           0x00           ///< Packet Error: No Error
+#define E_NO_ERROR           0x00           	///< Packet Error: No Error
 #define	E_PREM_SOP	         0x01				///< Packet Error: Premature received SOP
 #define	E_BUFFER_OVERFLOW    0x02				///< Packet Error: Receive Buffer Overflow
-#define	E_ESCAPE_SEQ			0x03	         ///< Packet Error: Wrong Escape Sequence
-#define  E_CRC_ERROR          0x04           ///< Packet Error: CRC Error
-#define  E_INVALID_PACKET     0x05           ///< Packet Error: CRC Error
+#define	E_ESCAPE_SEQ		 0x03	        	///< Packet Error: Wrong Escape Sequence
+#define E_CRC_ERROR          0x04           	///< Packet Error: CRC Error
+#define E_INVALID_PACKET     0x05           	///< Packet Error: CRC Error
 
-#define  UART_NO_OF_UARTS     1              ///< Number of UART Interfaces
-#define  UART_NO_RS232        0              ///< Number of UART RS232 Interfaces
+#define  UART_NO_OF_UARTS     1              	///< Number of UART Interfaces
+#define  UART_NO_RS232        0              	///< Number of UART RS232 Interfaces
 
-#define  RS232_BUFFER_LEN     64             ///< RS232 receiver buffer length
+#define  RS232_BUFFER_LEN     128             	///< RS232 receiver buffer length
 
-#define		BAUDRATE_2400					      1
-#define		BAUDRATE_4800					      2
-#define		BAUDRATE_9600					      3
-#define		BAUDRATE_14400					      4
-#define		BAUDRATE_19200					      5
-#define		BAUDRATE_28800					      6
-#define		BAUDRATE_38400					      7
-#define		BAUDRATE_57600					      8
-#define		BAUDRATE_76800					      9
-#define		BAUDRATE_115200					   10
+#define		BAUDRATE_2400					    1
+#define		BAUDRATE_4800					    2
+#define		BAUDRATE_9600					    3
+#define		BAUDRATE_14400					    4
+#define		BAUDRATE_19200					    5
+#define		BAUDRATE_28800					    6
+#define		BAUDRATE_38400					    7
+#define		BAUDRATE_57600					    8
+#define		BAUDRATE_76800					    9
+#define		BAUDRATE_115200					   	10
 
-#define     PARITY_NONE                      0
-#define     PARITY_EVEN                      1
-#define     PARITY_ODD                       2
+#define     PARITY_NONE                      	0
+#define     PARITY_EVEN                      	1
+#define     PARITY_ODD                       	2
 
 typedef enum
 {

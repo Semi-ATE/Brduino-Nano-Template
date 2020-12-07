@@ -1,0 +1,3 @@
+CmdInfo.c:29:5:InitInfoCommandHandler	0	static
+CmdInfo.c:40:5:SUB_GetSystemInfo	64	static
+CmdInfo.c:59:5:InfoCommandHandler	8	static

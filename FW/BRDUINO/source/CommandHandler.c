@@ -13,6 +13,7 @@
 #include "CommandHandler.h"
 #include "CmdInfo.h"
 #include "CmdSystem.h"
+#include "CommandMeasure.h"
 
 SemaphoreHandle_t                   xMutex_CmdHandler;
 SemaphoreHandle_t                   xSemaBin_CmdPollDevices;
@@ -97,6 +98,9 @@ int InitCommandHandler(void)
    xSemaBin_CmdPollDevices = xSemaphoreCreateBinary();
    if (xSemaBin_CmdPollDevices == NULL)
       return 0;
+   InitInfoCommandHandler();
+   InitSystemCommandHandler();
+   InitMeasureCommandHandler();
    return 1;
 }
 
@@ -188,14 +192,18 @@ uint8_t              *command;
       {
          switch(cmd)
          {
-			 case CMD_INFO:
-				t_subcmd = *command;
-				ret = InfoCommandHandler(dev_nr,command,len);
-				break;
-			case CMD_SYSTEM:
-			   t_subcmd = *command;
-			   ret = SystemCommandHandler(dev_nr,command,len);
-			   break;
+				case CMD_INFO:
+					t_subcmd = *command;
+					ret = InfoCommandHandler(dev_nr,command,len);
+					break;
+				case CMD_SYSTEM:
+					t_subcmd = *command;
+					ret = SystemCommandHandler(dev_nr,command,len);
+					break;
+				case CMD_MEASUREMENT:
+					t_subcmd = *command;
+					ret = MeasureCommandHandler(dev_nr,command,len);
+					break;
             default:
                t_cmd = CMD_NONE;
                t_subcmd = CMD_NO_SUB;

@@ -125,6 +125,52 @@ extern "C" {
 #define ADC_CH4_ADC		            ADC0
 #define ADC_CH5_ADC		            ADC0
 
+#define N_SUPPLY_RAILS					15
+
+#define RAIL1_VMON  						0       // float32  Voltage on RAIL1
+#define RAIL1_IMON  						1       // float32  Current in RAIL1
+#define RAIL2_VMON  						2       // float32  Voltage on RAIL2
+#define RAIL2_IMON  						3       // float32  Current in RAIL2
+#define P25V0D_VMON 						4       // float32  Voltage on P25V0D
+#define P25V0D_IMON 						5       // float32  Current in P25V0D
+#define P17V0D_VMON 						6       // float32  Voltage on P17V0D
+#define P17V0D_IMON 						7       // float32  Current in P17V0D
+#define N7V0D_VMON  						8       // float32  Voltage on N7V0D
+#define N7V0D_IMON  						9       // float32  Current in N7V0D
+#define P15V0A_VMON 						10      // float32  Voltage on P15V0A
+#define P15V0A_IMON 						11      // float32  Current in P15V0A
+#define N15V0A_VMON 						12      // float32  Voltage on N15V0A
+#define N15V0A_IMON 						13      // float32  Current in N15V0A
+#define P5V0D_VMON  						14      // float32  Voltage on P5V0D
+#define P5V0D_IMON  						15      // float32  Current in P5V0D
+#define P5V0A_VMON  						16      // float32  Voltage on P5V0A
+#define P5V0A_IMON  						17      // float32  Current in P5V0A
+#define N5V0A_VMON  						18      // float32  Voltage on N5V0A
+#define N5V0A_IMON  						19      // float32  Current in N5V0A
+#define P3V3D_VMON  						20      // float32  Voltage on P3V3D
+#define P3V3D_IMON  						21      // float32  Current in P3V3D
+#define PVLB_VMON   						22      // float32  Voltage on PVLB
+#define PVLB_IMON   						23      // float32  Current in PVLB
+#define P5V0R_VMON  						24      // float32  Voltage on P5V0R
+#define P5V0R_IMON  						25      // float32  Current in P5V0R
+#define GND_VMON    						26      // float32  Voltage on GND
+
+typedef struct __attribute__((packed)) {
+	uint16_t	turn_on_delay;
+	uint8_t	on_off;
+	uint8_t	sequence_pos;
+	float		gain_volt;
+	float		offset_volt;
+	float		gain_current;
+	float		offset_current;
+	float		low_limit_volt;
+	float		high_limi_volt;
+	float		low_limit_curr;
+	float		high_limit_curr;
+	float		actual_voltage;
+	float		actual_current;
+} SupplyRail_t;
+
 typedef struct {
 	uint16_t *value_ptr;
 	uint8_t adc_channel;

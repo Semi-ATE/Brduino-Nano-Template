@@ -70,7 +70,7 @@ uint32_t            ulNotify;
 
    for( ;; )
    {
-	   cmd_SUB_SYS_GET_CLOCKS();
+//	   cmd_SUB_SYS_GET_CLOCKS();
       if (xTaskNotifyWait(0x00,UINT32_MAX,&ulNotify,(TickType_t)500) == pdTRUE)
       {
          if ((ulNotify & (1 << 0)) != 0)

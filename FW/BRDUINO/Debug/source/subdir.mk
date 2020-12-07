@@ -8,6 +8,7 @@ C_SRCS += \
 ../source/CmdInfo.c \
 ../source/CmdSystem.c \
 ../source/CommandHandler.c \
+../source/CommandMeasure.c \
 ../source/Misc.c \
 ../source/System.c \
 ../source/crc.c \
@@ -19,6 +20,7 @@ OBJS += \
 ./source/CmdInfo.o \
 ./source/CmdSystem.o \
 ./source/CommandHandler.o \
+./source/CommandMeasure.o \
 ./source/Misc.o \
 ./source/System.o \
 ./source/crc.o \
@@ -30,6 +32,7 @@ C_DEPS += \
 ./source/CmdInfo.d \
 ./source/CmdSystem.d \
 ./source/CommandHandler.d \
+./source/CommandMeasure.d \
 ./source/Misc.d \
 ./source/System.d \
 ./source/crc.d \

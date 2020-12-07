@@ -1,0 +1,3 @@
+clock_config.c:75:13:CLOCK_CONFIG_FllStableDelay	0	static
+clock_config.c:209:6:BOARD_BootClockRUN	16	static
+clock_config.c:123:6:BOARD_InitBootClocks	0	static

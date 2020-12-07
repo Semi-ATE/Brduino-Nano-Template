@@ -6,7 +6,7 @@
  * Generated linker script file for MK22FN512xxx12
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * MCUXpresso IDE v11.2.1 [Build 4149] [2020-10-07] on Dec 2, 2020 6:41:07 PM
+ * MCUXpresso IDE v11.2.1 [Build 4149] [2020-10-07] on Dec 4, 2020 4:57:39 PM
  */
 
 INCLUDE "BRDUINO_Debug_library.ld"
@@ -19,7 +19,7 @@ SECTIONS
      /* MAIN TEXT SECTION */
     .text : ALIGN(4)
     {
-        FILL(0xff)
+         FILL(0xff)
         __vectors_start__ = ABSOLUTE(.) ;
         KEEP(*(.isr_vector))
         /* Global Section Table */
@@ -45,7 +45,7 @@ SECTIONS
         *(.after_vectors*)
 
         /* Kinetis Flash Configuration data */
-        . = 0x400 ;
+        . = 0x400;
         PROVIDE(__FLASH_CONFIG_START__ = .) ;
         KEEP(*(.FlashConfig))
         PROVIDE(__FLASH_CONFIG_END__ = .) ;
